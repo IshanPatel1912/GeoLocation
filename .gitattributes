@@ -1,2 +1,17 @@
-# Auto detect text files and perform LF normalization
+# Normalize line endings for text files
 * text=auto
+
+# --- Language stats: Gradle wrapper and IDE files are not project code ---
+gradlew linguist-vendored
+gradlew.bat linguist-vendored
+gradle/** linguist-vendored
+.idea/** linguist-vendored
+
+# --- Binary files ---
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.webp binary
+*.ico binary
+*.pdf binary
+*.jar binary
